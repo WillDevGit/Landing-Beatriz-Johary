@@ -8,7 +8,7 @@ import { ProjectSlider } from "./_components/projectSlider";
 
 export default function Home() {
   return (
-    <main className="bg-[#F3EBE4] w-full min-h-screen">
+    <main className="bg-[#F8F1EA] w-full min-h-screen">
       <NavBar></NavBar>
       <Hero></Hero>
       <Aboutme></Aboutme>

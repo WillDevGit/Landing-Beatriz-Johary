@@ -10,8 +10,8 @@ export function NavBar() {
   };
   return (
     <>
-      <nav className="container w-full flex justify-between px-4 md:px-10 font-anton mx-auto items-center pt-2 gap-4 bg-[#EEE6DF] text-red-800 uppercase">
-        <h1 className="font-bold">
+      <nav className="flex justify-between px-4 md:px-10 font-anton mx-auto items-center pt-2 gap-4 bg-[#F8F1EA] text-[#A00307] uppercase">
+        <h1 className="font-bold text-2xl">
           Beatriz <br></br> Johary
         </h1>
         <div className="hidden md:flex gap-6 pt-4">
@@ -41,7 +41,7 @@ export function NavBar() {
       </nav>
       {isOpenMenu && (
         <div
-          className={`fixed inset-0 grid grid-rows-3 uppercase px-6 pt-2 bg-red-900  transition-all duration-300 ease-in-out
+          className={`w-full fixed inset-0 grid grid-rows-3 uppercase px-6 pt-2 bg-red-900  transition-all duration-300 ease-in-out
     ${isOpenMenu ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`}
         >
           <div className="flex justify-between block font-medium">

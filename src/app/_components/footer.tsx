@@ -2,7 +2,7 @@
 
 export function Footer() {
   return (
-    <footer className="flex bg-red-700">
+    <footer className="flex flex-col md:flex-row w-full bg-red-700">
       <div>Vamos Conversar?</div>
       <div>
         <p>

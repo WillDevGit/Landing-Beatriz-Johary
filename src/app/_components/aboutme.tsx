@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Aboutme() {
   return (
-    <section className="flex bg-red-700 mx-4 p-6 rounded-2xl">
+    <section className="flex bg-[#A00307] mx-4 p-6 rounded-2xl">
       <section>foto</section>
       <article>
         <div className="flex flex-col gap-2 text-balance">
