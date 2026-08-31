@@ -1,20 +1,16 @@
 import { Aboutme } from "./_components/aboutme";
-import { Clients } from "./_components/clients";
-import { Experience } from "./_components/experience";
 import { Footer } from "./_components/footer";
 import { Hero } from "./_components/hero";
 import { NavBar } from "./_components/navbar";
-import { ProjectSlider } from "./_components/projectSlider";
+import { PortifolioContent } from "./_components/portifolioContent";
 
 export default function Home() {
   return (
-    <main className="bg-[#F8F1EA] w-full min-h-screen">
+    <main className="bg-[#f8eee5] w-full min-h-screen">
       <NavBar></NavBar>
       <Hero></Hero>
       <Aboutme></Aboutme>
-      <ProjectSlider></ProjectSlider>
-      <Experience></Experience>
-      <Clients></Clients>
+      <PortifolioContent></PortifolioContent>
       <Footer></Footer>
     </main>
   );

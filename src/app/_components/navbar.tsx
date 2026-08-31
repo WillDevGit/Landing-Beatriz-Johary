@@ -10,8 +10,8 @@ export function NavBar() {
   };
   return (
     <>
-      <nav className="flex justify-between px-4 md:px-10 font-anton mx-auto items-center pt-2 gap-4 bg-[#F8F1EA] text-[#A00307] uppercase">
-        <h1 className="font-bold text-2xl">
+      <nav className="flex justify-between px-8 md:px-10 mx-auto items-center pt-4 gap-4 bg-[#F7ECE3] text-[#A31E22] uppercase ">
+        <h1 className="font-bebas leading-6 text-3xl">
           Beatriz <br></br> Johary
         </h1>
         <div className="hidden md:flex gap-6 pt-4">
@@ -33,7 +33,7 @@ export function NavBar() {
             Vamos Conversar
           </button>
         </div>
-        <div className="flex md:hidden text-[#A5090D]">
+        <div className="flex md:hidden text-[#A5090D] ">
           <button onClick={handleClickMenu}>
             <Image src={menu} alt="profile" priority />
           </button>
@@ -45,7 +45,7 @@ export function NavBar() {
     ${isOpenMenu ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`}
         >
           <div className="flex justify-between block font-medium">
-            <h1 className="">
+            <h1 className="font-montserrat">
               Beatriz <br></br> Johary
             </h1>
             <p onClick={handleClickMenu} className="text-2xl font-medium ">

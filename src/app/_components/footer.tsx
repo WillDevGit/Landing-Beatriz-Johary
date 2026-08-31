@@ -1,24 +1,32 @@
 "use client";
-
+import Image from "next/image";
+import linkedln_logo from "../../../public/linkedin.png";
 export function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row w-full bg-red-700">
-      <div>Vamos Conversar?</div>
+    <footer className="flex flex-col md:flex-row w-full gap-4 p-4 bg-red-700">
       <div>
-        <p>
-          Adoro trocar ideias, conhecer histórias e trasnformar possibilidades
+        <h1 className=" font-bebas text-2xl tracking-wider uppercase">
+          vamos conversar?
+        </h1>
+      </div>
+      <div className="w-3xs">
+        <p className="font-montserrat text-[12px] text-pretty">
+          Adoro trocar ideias, conhecer histórias e transformar possibilidades
           em projetos.
         </p>
       </div>
 
-      <div>
-        <p>cotrimbeatriz5@gmail.com</p>
+      <div className="flex items-center gap-6">
+        <p className="text-[12px]">cotrimbeatriz5@gmail.com</p>
+        <div>
+          <div>
+            <Image src={linkedln_logo} alt="linkedln" />
+          </div>
+        </div>
       </div>
-      <div>
-        <p>redes sociais</p>
-      </div>
-      <div>
-        <p>2026 Beatriz Johary</p>
+
+      <div className="text-[9px] border-t border-white pt-2">
+        <p>© 2026 Beatriz Johary.</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </footer>
