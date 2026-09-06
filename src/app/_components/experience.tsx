@@ -2,13 +2,18 @@
 
 export function Experience() {
   return (
-    <section className="text-red-700 my-6 ">
+    <section className="text-red-700 my-6 mx-4 ">
       <div>
         <div className="flex gap-2 items-center justify-between uppercase font-bold tracking-tighter">
           <p>experiência</p>
           <hr className="block flex-1 border-t mx-2 border-red-800" />
         </div>
         {/* cards experiencia */}
+      </div>
+      <div className="flex gap-1 border">
+        <div className="px-2 border border-amber-300 py-2">
+          <div className="h-2 w-2 bg-[#A00307] rounded-[100%] "></div>
+        </div>
         <div className="flex flex-col gap-2 py-2 text-black text-[12px]">
           <div>
             <p className="text-[#A00307] font-semibold text-[10px]">

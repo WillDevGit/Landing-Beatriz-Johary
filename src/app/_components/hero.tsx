@@ -5,30 +5,53 @@ import arrow from "../../../public/seta.png";
 
 export function Hero() {
   return (
-    <section className=" flex flex-col gap-4 md:flex-row justify-between px-6 md:px-8 pt-2 bg-[#F7ECE3] ">
-      <div className="flex flex-col justify-center gap-4 text-[#A00307] pt-8 uppercase">
-        <h1 className="text-[#A00307] font-bebas text-[84px] tracking-tight leading-18">
-          Estratégico <br></br>
-          <span className="font-montserrat font-semibold">&</span> Criativo
-        </h1>
-        <div className="font-montserrat font-semibold lowercase md:text-3xl">
-          <p>ideias que geram conexão,</p>
-          <p>marcas que ficam na memória</p>
+    <section className="relative w-full overflow-hidden bg-[#F7ECE3]">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 md:items-end md:gap-6 lg:gap-8">
+          <div className="flex flex-col gap-6 pt-10 text-[#A00307] md:col-span-5 md:gap-8 md:pb-6 md:pt-14 lg:pb-8 lg:pt-16">
+            <h1 className="font-bebas uppercase leading-[0.85] tracking-wide text-[clamp(3.25rem,11vw,4.75rem)] md:text-[clamp(3.5rem,5.5vw,5.5rem)] lg:text-[clamp(5.0rem,6vw,7.0rem)]">
+              Estratégico <br />
+              <span className="font-montserrat text-[0.42em] font-semibold">
+                &
+              </span>{" "}
+              Criativo
+            </h1>
+
+            <div className="font-montserrat text-base font-semibold lowercase leading-snug sm:text-lg md:text-xl lg:text-2xl">
+              <p>ideias que geram conexão,</p>
+              <p>marcas que ficam na memória</p>
+            </div>
+
+            <div className="flex items-center gap-3 pb-2 font-montserrat text-xs font-bold uppercase tracking-wide sm:text-sm md:pb-0">
+              <button type="button">Conhecer Trabalhos</button>
+              <Image
+                src={arrow}
+                alt=""
+                aria-hidden
+                className="h-8 w-8 shrink-0 sm:h-9 sm:w-9"
+              />
+            </div>
+          </div>
+
+          <div className="relative sm:-mx-6 md:col-span-7 md:mx-0 md:flex md:justify-end lg:-mr-2">
+            <Image
+              src={profile}
+              alt="Beatriz Johary"
+              width={1536}
+              height={1024}
+              className="h-auto w-full object-contain object-bottom md:w-full md:max-w-none lg:max-h-[min(82vh,680px)]"
+              sizes="(max-width: 768px) 100vw, 58vw"
+              priority
+            />
+            <p
+              className="pointer-events-none absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 text-[10px] font-montserrat font-medium uppercase tracking-[0.25em] text-[#A00307] lg:block xl:right-6"
+              style={{ writingMode: "vertical-rl" }}
+              aria-hidden
+            >
+              + publicidades com propósito
+            </p>
+          </div>
         </div>
-        <div className="flex font-montserrat gap-2 lowercase font-bold">
-          <button>Conhecer Trabalhos</button>
-          <Image src={arrow} alt="Ir para trabalhos" />
-        </div>
-      </div>
-      <div className="w-full flex justify-end ">
-        <Image
-          src={profile}
-          alt="profile"
-          width={1536}
-          height={1024}
-          className="w-full h-auto"
-          priority
-        />
       </div>
     </section>
   );

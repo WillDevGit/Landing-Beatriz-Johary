@@ -1,13 +1,22 @@
 "use client";
 import Image from "next/image";
 import menu from "../../../public/menu.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function NavBar() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const handleClickMenu = () => {
     setIsOpenMenu(!isOpenMenu);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isOpenMenu ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpenMenu]);
+
   return (
     <>
       <nav className="flex justify-between px-8 md:px-10 mx-auto items-center pt-4 gap-4 bg-[#F7ECE3] text-[#A31E22] uppercase ">
@@ -41,7 +50,7 @@ export function NavBar() {
       </nav>
       {isOpenMenu && (
         <div
-          className={`w-full fixed inset-0 grid grid-rows-3 uppercase px-6 pt-2 bg-red-900  transition-all duration-300 ease-in-out
+          className={`fixed inset-0 z-50 overflow-hidden grid grid-rows-3 uppercase px-6 pt-2 bg-red-900  transition-all duration-300 ease-in-out
     ${isOpenMenu ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`}
         >
           <div className="flex justify-between block font-medium">

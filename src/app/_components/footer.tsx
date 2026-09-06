@@ -3,7 +3,7 @@ import Image from "next/image";
 import linkedln_logo from "../../../public/linkedin.png";
 export function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row w-full gap-4 p-4 bg-red-700">
+    <footer className="flex flex-col md:flex-row md:justify-around w-full gap-4 p-4 bg-red-700">
       <div>
         <h1 className=" font-bebas text-2xl tracking-wider uppercase">
           vamos conversar?
@@ -25,7 +25,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="text-[9px] border-t border-white pt-2">
+      <div className="text-[9px] md:border-none border-t border-white pt-2">
         <p>© 2026 Beatriz Johary.</p>
         <p>Todos os direitos reservados.</p>
       </div>

@@ -6,7 +6,7 @@ import { PortifolioContent } from "./_components/portifolioContent";
 
 export default function Home() {
   return (
-    <main className="bg-[#f8eee5] w-full min-h-screen">
+    <main className="relative bg-[#F7ECE3] w-full min-h-screen">
       <NavBar></NavBar>
       <Hero></Hero>
       <Aboutme></Aboutme>
