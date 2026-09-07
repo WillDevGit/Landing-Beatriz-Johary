@@ -33,7 +33,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative sm:-mx-6 md:col-span-7 md:mx-0 md:flex md:justify-end lg:-mr-2">
+          <div className="relative mt-2 sm:mt-0 sm:-mx-6 md:col-span-7 md:mx-0 md:flex md:justify-end lg:-mr-2">
             <Image
               src={profile}
               alt="Beatriz Johary"
