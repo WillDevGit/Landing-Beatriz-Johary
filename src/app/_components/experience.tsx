@@ -25,7 +25,7 @@ export function Experience() {
   ];
 
   return (
-    <section className="text-red-700 my-6 mx-4 ">
+    <section className="text-[#A00307] my-6 mx-4 ">
       <div>
         <div className="flex gap-2 items-center justify-between uppercase font-bold tracking-tighter">
           <p>experiência</p>

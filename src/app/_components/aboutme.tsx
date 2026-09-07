@@ -3,6 +3,7 @@
 import Image from "next/image";
 import sobremim from "../../../public/sobremim.png";
 import perfil from "../../../public/perfil.png";
+import setaContato from "../../../public/next.png";
 
 export function Aboutme() {
   return (
@@ -119,14 +120,21 @@ export function Aboutme() {
             {/* BOTÃO MOBILE */}
             <div
               className="
+                flex
                 w-fit
                 md:hidden
                 border border-white
                 rounded-2xl
-                p-3
+                px-2
+                py-3
+                items-center
+                gap-4
               "
             >
-              <button>Conhecer mais sobre mim</button>
+              <button className="text-sm uppercase">
+                Conhecer mais sobre mim
+              </button>
+              <Image src={setaContato} alt="Contatar" className="w-4 h-4" />
             </div>
           </div>
         </article>

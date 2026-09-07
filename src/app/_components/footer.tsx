@@ -6,7 +6,7 @@ import seta from "../../../public/arrow-white.png";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row md:justify-around w-full gap-4 p-4 bg-red-700">
+    <footer className="flex flex-col md:flex-row md:justify-around w-full gap-4 p-4 bg-[#A00307]">
       <div>
         <h1 className="text-white font-bebas text-2xl tracking-wider uppercase">
           vamos conversar?

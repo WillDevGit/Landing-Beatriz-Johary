@@ -24,7 +24,7 @@ const clients = [
 
 export function Clients() {
   return (
-    <section className="mx-4 font-montserrat text-red-700">
+    <section className="mx-4 font-montserrat text-[#A00307]">
       <div className="flex items-center gap-2 uppercase font-bold tracking-tighter">
         <p className="whitespace-nowrap">Colaborações</p>
 
