@@ -9,9 +9,9 @@ export function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 md:items-end md:gap-6 lg:gap-8">
           <div className="flex flex-col gap-6 pt-10 text-[#A00307] md:col-span-5 md:gap-8 md:pb-6 md:pt-14 lg:pb-8 lg:pt-16">
-            <h1 className="font-bebas uppercase leading-[0.85] tracking-wide text-[clamp(3.25rem,11vw,4.75rem)] md:text-[clamp(3.5rem,5.5vw,5.5rem)] lg:text-[clamp(5.0rem,6vw,7.0rem)]">
+            <h1 className="font-bebas uppercase leading-[0.85] tracking-wide text-[clamp(4.0rem,20vw,7.75rem)] md:text-[clamp(4.5rem,10vw,7.5rem)] lg:text-[clamp(6.5rem,10vw,7.0rem)]">
               Estratégico <br />
-              <span className="font-montserrat text-[0.42em] font-semibold">
+              <span className="font-montserrat text-6xl lg:text-7xl font-semibold">
                 &
               </span>{" "}
               Criativo

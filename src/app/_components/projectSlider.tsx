@@ -10,6 +10,7 @@ import cinemark from "../../../public/projects/cinemark.png";
 import vitalfresh from "../../../public/projects/vitalfresh.png";
 import agencia from "../../../public/projects/agencia.png";
 import ic from "../../../public/projects/ic.png";
+import arrow from "../../../public/arrow-right.png";
 
 export function ProjectSlider() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -102,7 +103,7 @@ export function ProjectSlider() {
           flex
           gap-2
           overflow-x-auto
-          pb-3
+          py-3
           md:gap-4
           scrollbar-hide
         "
@@ -138,7 +139,7 @@ export function ProjectSlider() {
               />
             </div>
 
-            <div className="h-[35%] bg-[#f8f1ec] p-3 font-montserrat">
+            <div className="relative h-[35%] bg-[#f8f1ec] p-3 font-montserrat">
               <p className="font-semibold">{card.type}</p>
 
               <p className="font-semibold">{card.name}</p>
@@ -148,6 +149,11 @@ export function ProjectSlider() {
               <p className="whitespace-pre-line pt-2 text-sm text-black">
                 {card.title}
               </p>
+              <div className="absolute right-4 bottom-5 h-6 w-6 shrink-0">
+                <button>
+                  <Image src={arrow} alt={card.name} fill />
+                </button>
+              </div>
             </div>
           </div>
         ))}
@@ -183,7 +189,7 @@ export function ProjectSlider() {
               />
             </div>
 
-            <div className="h-[35%] bg-[#f8f1ec] p-3 font-montserrat">
+            <div className="relative h-[35%] bg-[#f8f1ec] p-3 font-montserrat">
               <p className="font-semibold">{card.type}</p>
 
               <p className="font-semibold">{card.name}</p>
@@ -193,6 +199,11 @@ export function ProjectSlider() {
               <p className="whitespace-pre-line pt-2 text-sm text-black">
                 {card.title}
               </p>
+              <div className="absolute right-3 bottom-5 h-6 w-6 shrink-0">
+                <button>
+                  <Image src={arrow} alt={card.name} fill />
+                </button>
+              </div>
             </div>
           </div>
         ))}

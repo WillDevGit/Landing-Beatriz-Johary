@@ -6,7 +6,7 @@ import perfil from "../../../public/perfil.png";
 
 export function Aboutme() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F7ECE3] pb-2">
+    <section className="relative w-full overflow-hidden bg-[#F7ECE3] pb-2 text-white">
       <div
         className="
           relative grid grid-cols-1
