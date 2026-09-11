@@ -24,10 +24,10 @@ export function NavBar() {
   return (
     <>
       <nav className="flex justify-between px-8 md:px-10 mx-auto items-center pt-4 gap-4 bg-[#F7ECE3] text-[#A31E22] uppercase ">
-        <h1 className="font-bebas leading-6 text-3xl">
+        <h1 className="font-bebas leading-6 text-3xl" data-aos="flip-up">
           Beatriz <br></br> Johary
         </h1>
-        <div className="hidden md:flex gap-6 pt-4">
+        <div className="hidden md:flex gap-6 pt-4" data-aos="zoom-in">
           <p className="cursor-pointer border-b-2 border-transparent hover:border-b-2 hover:border-red-700 pb-4">
             Sobre
           </p>
@@ -41,7 +41,7 @@ export function NavBar() {
             Contato
           </p>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex" data-aos="fade-left">
           <button className="bg-[#A5090D] cursor-pointer hover:bg-[#7f090d] text-white px-4 p-2 rounded-4xl">
             Vamos Conversar
           </button>

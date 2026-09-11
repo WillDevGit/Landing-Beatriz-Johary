@@ -36,7 +36,11 @@ export function Experience() {
       <ol className="ml-2 border-l-2 border-red-800">
         {" "}
         {experiences.map((exp) => (
-          <li key={exp.cargo} className="relative pb-10 pl-8 last:pb-0">
+          <li
+            key={exp.cargo}
+            data-aos="fade-right"
+            className="relative pb-10 pl-8 last:pb-0"
+          >
             <span className="absolute -left-2 top-1 h-4 w-4 rounded-full bg-red-800" />
             <p className="mb-1 text-sm font-bold text-red-800">{exp.periodo}</p>
             <p className="font-bold text-red-900">{exp.cargo}</p>

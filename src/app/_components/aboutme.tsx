@@ -33,6 +33,7 @@ export function Aboutme() {
             alt="perfil"
             width={986}
             height={1595}
+            data-aos="fade-right"
             className="
               h-auto w-full
               object-contain object-bottom
@@ -100,6 +101,7 @@ export function Aboutme() {
                 gap-5
                 lg:gap-6
               "
+              data-aos="zoom-in"
             >
               <p>mas você pode me chamar de Bia.</p>
 
@@ -119,6 +121,7 @@ export function Aboutme() {
 
             {/* BOTÃO MOBILE */}
             <div
+              data-aos="fade-right"
               className="
                 flex
                 w-fit
@@ -153,6 +156,7 @@ export function Aboutme() {
           <Image
             src={sobremim}
             alt="sobre mim"
+            data-aos="fade-left"
             width={1315}
             height={1196}
             className="

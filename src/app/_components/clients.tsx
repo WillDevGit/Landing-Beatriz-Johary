@@ -33,7 +33,12 @@ export function Clients() {
 
       <div className="grid grid-cols-4 md:grid-cols-8 gap-4 md:gap-6 pt-6">
         {clients.map((client) => (
-          <div key={client.alt} className="relative w-full aspect-square">
+          <div
+            key={client.alt}
+            className="relative w-full aspect-square"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
             <Image
               src={client.src}
               alt={client.alt}
